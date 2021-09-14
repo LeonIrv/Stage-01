@@ -1,0 +1,6 @@
+sa_account_id               = "proxy-sa-acc"
+sa_display_name             = "SA with pubsub editor and storage admin rights"
+project_id                  = "epam-demo-325303"
+sa_role                     = "roles/pubsub.editor"
+sa_storage_role             = "roles/storage.objectAdmin"
+sa_user_role                = "roles/iam.serviceAccountUser"

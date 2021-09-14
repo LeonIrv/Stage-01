@@ -1,0 +1,6 @@
+sch_name                = "demo-scheduler"
+sch_desc                = "Cloud scheduler for Stage 1 of the final demo"
+schedule                = "*/5 * * * *"
+time_zone               = "America/Mexico_City"
+base_value              = "base64encode"
+topic_name              = "projects/epam-demo-325303/topics/demo_topic"

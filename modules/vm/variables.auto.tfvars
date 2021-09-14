@@ -1,0 +1,8 @@
+project_id                  = "epam-demo-325303"
+vm_network_name             = "jenkinsnetwork"
+vm_subnet_name              = "jenkinsnetwork"
+vm_zone                     = "us-central1-b"
+vm_machine_type             = "n1-standard-1"
+vm_instance_name            = "pubsub-instance"
+vm_os_version               = "ubuntu-os-cloud/ubuntu-1804-lts"
+sa_account_id               = "proxy-sa-acc@epam-demo-325303.iam.gserviceaccount.com"
