@@ -10,9 +10,8 @@ sudo cat << 'EOF' > /usr/local/pubsubjob.sh
 #!/bin/bash
 current_time=$(date "+%Y.%m.%d-%H.%M.%S")
 new_fileName=$pubsub.$current_time.json
-sudo gcloud pubsub subscriptions pull demo-subscription --format='json' >> $new_fileName
+sudo gcloud pubsub subscriptions pull demo-subscription --auto-ack --format='json' >> $new_fileName
 sudo gsutil cp /usr/local/$new_fileName gs://epam-demo-bucket/$new_fileName
-sudo gcloud pubsub subscriptions pull demo-subscription --auto-ack
 EOF
 
 sudo chmod +x /usr/local/pubsubjob.sh
