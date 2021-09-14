@@ -10,7 +10,7 @@ pipeline{
     stages{
         stage('Git Checkout'){
             steps{
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/LeonIrv/gcp-demo.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/LeonIrv/Stage-01'
             }
         }
         stage('Terraform Initialize'){
