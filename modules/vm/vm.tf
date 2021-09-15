@@ -16,7 +16,7 @@
     access_config {}
   }
   service_account {
-    email  = var.sa_account_id
+    email  = "proxy-sa-acc@epam-demo-325303.iam.gserviceaccount.com"
     scopes = ["cloud-platform"]
   }
   metadata_startup_script = file("${path.module}/pubsubjob.sh")
