@@ -1,4 +1,4 @@
-resource "google_storage_bucket" "bucket" {
+resource "google_storage_bucket" "PubsubBucket" {
   name                        = var.bucket_name
   location                    = var.gcp_region
   project                     = var.project_id
