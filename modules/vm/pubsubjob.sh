@@ -9,7 +9,7 @@ sudo touch /usr/local/pubsubjob.sh
 sudo cat << 'EOF' > /usr/local/pubsubjob.sh
 #!/bin/bash
 sudo gcloud pubsub subscriptions pull demo-subscription --auto-ack --format='json' | tee -a /usr/local/message-$(date +'%d-%m-%Y-%H:%M').json
-sudo gsutil cp /usr/local/message-*.json gs://epam-demo-bucket/
+sudo gsutil cp /usr/local/message-*.json gs://epam-demo-bucket/Pubsub
 EOF
 
 sudo chmod +x /usr/local/pubsubjob.sh
