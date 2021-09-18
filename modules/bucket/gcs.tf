@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "PubsubBucket" {
-  name                        = var.bucket_name
+  name                        = epam-demo-bucket
   location                    = var.gcp_region
   project                     = var.project_id
   uniform_bucket_level_access = var.uniform_bucket_level_access
