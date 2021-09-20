@@ -1,4 +1,4 @@
-resource "google_cloud_scheduler_job" "default" {
+resource "google_cloud_scheduler_job" "scheduler" {
   name        = var.sch_name
   description = var.sch_desc
   schedule    = var.schedule
