@@ -90,3 +90,7 @@ variable "time_zone" {
   type        = string
   description = "Time Zone for the Cloud Scheduler"
 }
+variable "topic_name_sch" {
+  type        = string
+  description = "Topic name in Cloud Scheduler build format"
+}
