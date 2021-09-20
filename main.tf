@@ -6,14 +6,6 @@ module "bucket" {
   uniform_bucket_level_access = var.uniform_bucket_level_access
   force_destroy               = var.force_destroy
 }
-module "scheduler" {
-  source                      = "./modules/scheduler"
-  name                        = var.sch_name
-  description                 = var.sch_desc
-  schedule                    = var.schedule
-  time_zone                   = var.time_zone
-  topic_name                  = var.topic_name
-}  
 module "service_account" {
   source          = "./modules/service_account"
   sa_account_id   = var.sa_account_id
@@ -44,4 +36,14 @@ module "pubsub" {
   topic_name     = var.topic_name
   sub_name       = var.sub_name
   mess_retention = var.mess_retention
+}
+module "scheduler" {
+  source                      = "./modules/scheduler"
+  name                        = var.sch_name
+  description                 = var.sch_desc
+  schedule                    = var.schedule
+  time_zone                   = var.time_zone
+  topic_name                  = var.topic_name
+  
+  depends_on = [module.pubsub]
 }
