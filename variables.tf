@@ -74,3 +74,19 @@ variable "mess_retention" {
   type        = string
   description = "Value for the message retention"
 }
+variable "sch_name" {
+  type        = string
+  description = "Name for the Cloud Scheduler"
+}
+variable "sch_desc" {
+  type        = string
+  description = "Description for the Cloud Scheduler"
+}
+variable "schedule" {
+  type        = string
+  description = "Schedule when to run the Cloud Scheduler"
+}
+variable "time_zone" {
+  type        = string
+  description = "Time Zone for the Cloud Scheduler"
+}
