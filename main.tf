@@ -39,8 +39,8 @@ module "pubsub" {
 }
 module "scheduler" {
   source                      = "./modules/scheduler"
-  name                        = var.sch_name
-  description                 = var.sch_desc
+  sch_name                    = var.sch_name
+  sch_desc                    = var.sch_desc
   schedule                    = var.schedule
   time_zone                   = var.time_zone
   topic_name                  = var.topic_name
