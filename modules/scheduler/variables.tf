@@ -14,7 +14,7 @@ variable "time_zone" {
   type        = string
   description = "Time Zone to be used in interpreting schedule"
 }
-variable "topic_name" {
+variable "topic_name_sch" {
   type        = string
   description = "Pub/Sub Topic Name"
 }
