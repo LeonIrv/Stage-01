@@ -43,7 +43,7 @@ module "scheduler" {
   sch_desc                    = var.sch_desc
   schedule                    = var.schedule
   time_zone                   = var.time_zone
-  topic_name                  = var.topic_name
+  topic_name                  = var.topic_name_sch
   
   depends_on = [module.pubsub]
 }
