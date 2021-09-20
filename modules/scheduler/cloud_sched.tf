@@ -6,6 +6,6 @@ resource "google_cloud_scheduler_job" "scheduler" {
 
   pubsub_target {
     topic_name = var.topic_name
-    data       = base64encode("CommitMessageTest")
+    data       = base64encode("test")
   }
 }
